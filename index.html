@@ -1,0 +1,102 @@
+<!DOCTYPE html lang="pt-BR"> <!--tag utilizada para mostrar ao navegador que o a versão do HTML usada no documento é a versão 5,
+                              o atributo "lang" é utilizado para definir o idioma do documento, que nesse caso é pt-BR(português brasileiro) -->
+<html>
+
+<head>
+    <meta charset="utf-8">  <!--indica que o charset(conjunto de caracteres) utilizado pelo site será o UTF-8-->
+    <title>Weber ribeiro marcondes</title>
+
+    <link rel="stylesheet" href="style.css"> <!--tag usada para linkar o arquivo CSS com html.
+
+                                              rel: indica o tipo de arquivo que será linkado a página,
+                                                    e nesse caso por ser um CSS seu valor é "stylesheet".
+                                            
+                                              href: caminho aonde o arquivo está, nesse caso como ele está na mesma pasta
+                                                    do index.html só o nome do arquivo já é suficiente.-->
+</head>
+<body>
+    <header> <!-- É o cabeçalho da página ou de uma seção da página 
+                e normalmente contém logotipos, menus, campos de busca.-->
+
+
+        <img src="minha-img.jpg" alt="Ilustração do rosto do weber ribeiro marcondes" class="photo">  <!--
+
+            src: caminho aonde o arquivo de imagem fornecido a tag está, ou site (caso o arquivo seja de um site externo).
+
+                 OBS.: No caso acima a imagem é do site que está sendo construido e não de um site externo, só que devido a mesma
+                        estar na mesma pasta do arquivo index.html não e necessário informar o caminho até o arquivo, apenas o nome.
+
+            alt: descrição da imagem apresentada, é mostrada na tela caso a mesma não carregue por algum motivo e lida para o usuário por leitores de tela.
+        -->
+        <h1 id="title">Weber ribeiro marcondes</h1>  <!-- tag utilizada para títulos, por meio dela é possível identificar a importância de um título
+                                            pois a mesma vai de h1(mais importante) até h6(menos importante). dica: use apenas um H1 por página
+                                            pois o conteúdo que estiver no mesmo indica o objetivo da pâgina-->
+    </header>
+
+    <section> <!--Representa uma seção genérica de conteúdo quando não houver um elemento mais específico para isso.-->
+
+        <header>
+            <h2 class="subtitle">Posts</h2>
+        </header>
+
+        <article class="post">  <!--a tag article representa um conteúdo independente e de maior relevância dentro de uma página, 
+                        como um post de blog, uma notícia em uma barra lateral ou um bloco de comentários.
+                        pode conter dentro de si outras tags como um header, cabeçalho, paragrafo ou uma imagem -->
+            <header>
+                <h3 class="post_title" > Post #1 </h3>
+                <img src="img-java-code.jpg" alt="imagem de código feito em java" class="post_image">
+            </header>
+
+            <p class="post_content">     
+                Lorem ipsum dolor sit amet, 
+                <a href="https://github.com/webermarcondes" target="_blank">consectetur adipiscing</a>  
+                Duis justo mi, feugiat sed turpis sed, pulvinar cursus lectus. 
+                Ut volutpat ipsum sed neque mattis, eu luctus nunc vulputate. 
+                <a href="mailto:webermarcondes7@gmail.com">Hyperlink que direciona pra e-mail</a> in quam ac rutrum. Integer non metus viverra, 
+                finibus ligula vel, luctus orci. Maecenas vitae justo feugiat, varius est iaculis, 
+                posuere eros. In eros arcu, vulputate id ipsum id, suscipit venenatis mauris. 
+                Praesent sed feugiat ipsum. Nam congue faucibus porta. Suspendisse ultrices ac magna in suscipit. 
+                Quisque vitae fermentum dui. Donec sit amet bibendum nisi, at elementum velit. Morbi sed feugiat ligula. 
+                Donec eu erat at nunc porttitor mollis nec sed dui. 
+                Suspendisse potenti. Sed sit amet pellentesque sem.
+
+                <a href="tel:5548996212764">hyperlink que direciona pra telefone</a>
+            
+            </p> <!-- a tag p representa um parágrafo, só que a mesma não suporta apenas texto, 
+                                                    nesta tag podemos adicionar imagens, código, vídeos e vários 
+                                                    outros tipos de conteúdo.-->
+
+            <!--a tag <a> usada no texto da tag <p> acima tem a função de criar links para outros conteúdos na internet. 
+                "href" é o link do conteúdo que será mostrado em tela assim que o usuário clicar no 
+                hyperlink e "target" é o modo de abertura do conteúdo que neste caso é "_blank",
+                o que significa que o conteúdo será mostrado em uma nova página do navegador-->
+                                                                                                           
+        </article>
+    </section>
+    <footer>  <!--Esse elemento representa o rodapé do conteúdo ou de parte dele
+                  Exemplo de conteúdo para um footer:  informações de autor e links relacionados
+                -->
+
+        <ul class="contacts_list">  <!--tag utilizada para criar uma lista de conteúdo aonde 
+                    a ordem dos mesmos não é importante, além desta temos também a tag "<ol></ol>".
+                    Nesta a ordem importa e os elementos dentro da lista são numerados-->
+
+            <li>
+                <a href="mailto:webermarcondes7@gmail.com">webermarcondes7@gmail.com</a>
+            </li> <!--Tag utilizada para adicão de conteúdo dentro de uma lista-->
+
+            <li>
+               <a href="https://www.linkedin.com/in/weber-marcondes-7b3ba0234/" target="_blank">Meu Linkedin</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/webermarcondes" target="_blank">Meu Github</a>
+            </li>
+
+        </ul>
+    </footer>
+
+    
+</body>
+
+</html>

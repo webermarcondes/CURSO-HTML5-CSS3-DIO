@@ -1,0 +1,217 @@
+body {  /*"body" é um seletor de tipo de tag, todas as propriedades definidas aqui terão efeito dentro da tag body*/
+    background-color: #f7f7f7;
+    font-family: Verdana, Arial;  /*   
+                                    a tag "font-family" define a fonte que será usada para o conteúdo.
+                                    Para valor a esta tag podemos fornecer apenas uma fonte ou mais como o caso
+                                    do exemplo acima, no caso acima se a fonte Verdana (que é a primeira) não funcionar
+                                    a fonte Arial entra como backup.
+                                    */
+
+    /*font-size: 40px;*/ /*a tag "font-size" é utilizada para definição do tamanho do texto */
+
+    font-style: italic; /*a tag "font-style" é utilizada para alterar a aparência da fonte do texto.
+                            Pode receber o valor "italic"(itálico) que deixara a fonte do texto um pouco
+                            inclinada, o valor normal que não altera a aparência da fonte e outros valores também;
+                        */
+
+
+    max-width: 900px; /*a tag "max-width" é utilizada para a definição da largura máxima de um elemento HTML,
+                        neste caso a largura da tag body pode chegar até 900px.*/
+
+    margin: auto; /*o valor auto definido para margin ajusta as margens a esquerda e a direita do elemento
+                  HTML fazendo com que o mesmo fique centralizado.*/
+
+}
+
+.photo {
+    border-radius: 50%;  /*com o border-radius em 50% elementos quadrados se tornam circulares.*/
+
+    border: 1px solid #505050;
+}
+
+#title, .subtitle, .post_title {  /*seletores de ID começam com # e só podem ser usados uma vez em uma
+                                    página enquanto seletores de classe começam com . e
+                                    não possuem limite de quantidade de uso por página. */
+    color: #505050;
+}
+
+#title {
+    text-transform: uppercase; /*Define que todo o conteúdo que estiver dentro de um elemento HTML que estiver 
+                                usando o id 'title' terá suas letras mostradas em maíusculo.
+
+                                pode receber outras valores além de uppercase como lowercase (que faz com 
+                                que todas as letras sejam minúsculas) ou capitalize (que faz com que a letra inicial
+                                de cada palavra seja maíuscula).*/
+                                
+    /*text-decoration: overline;*/ /*Define uma linha que pode estar acima do texto com o valor overline, 
+                                abaixo do texto com o valor underline ou cortando o texto se receber o valor
+                                line-through, essa linha tem objetivo de dar destaque ao texto.*/
+
+    font-size: 40px;
+}
+
+a {
+    text-decoration: line-through;
+    color: #505050;
+}
+
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0px;
+    margin-bottom: 15px /*Definição de margem apenas para o canto inferior do elemento que utilizar 
+                          o seletor de classe ".post_title" */; 
+}
+
+.post {
+    background-color: #FFF;
+
+
+    padding: 15px; /*espaçamento entre o conteúdo do elemento em que a classe ".post" 
+                    está sendo utilizada e a borda do conteúdo*/
+
+    /*padding: 10px 5px;*/  /*10px é o valor de padding para o eixo y (parte inferior e superior)
+                          e 5px é o valor de padding para o eixo x (lado esquerdo e direito)*/
+
+    /*padding: 15px 10px 5px 0px;*/ /*15px é o padding do topo, 10px é o da direita, 
+                                    5px da parte inferior e 0px da parte esquerda*/
+
+
+    /*Definição de padding com as propriedades especificas para cada lado:
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    */
+
+    border: 3px solid #505050; /*"3px" -> largura da borda (além de pixels seu tamanho também pode ser informado em cm
+                                        ou mm)
+                                  "solid"(sólido) -> estilo da borda, além deste também existem os estilos dotted(pontilhado) e dashed(tracejado) e outros.  
+                                  
+                                  "#505050" -> cor da borda em valor hexadecimal. também pode ter seu valor com o nome da cor em inglês
+                                  
+                                  as caracteristicas definidas em "border" valem para todas as bordas do conteúdo,
+                                  mas se caso for necessário que alguma borda tenha algo especifico diferente das 
+                                  outras é só definir suas caracteristicas na propriedade border especifica da borda 
+                                  em questão abaixo da propriedade "border" para que assim o que for definido para a borda
+                                  especifica sobrescreva o que já está nela e havia sido definido na propriedade "border".
+                                  */
+    
+    /* Definição de propriedades para a border do conteúdo com as propriedades especificas para cada
+        canto da borda:
+
+    border-top: 3px solid green;
+    border-right: 3px dashed yellow;
+    border-bottom: 3px dotted red;
+    border-left: 3px dashed blue;
+    */
+
+    /* para definição de caracteristicas da "border" podemos utilizar a propriedade "border" 
+        e definir largura, estilo e cor (nessa ordem) ou usar propriedades especificas para cada
+        coisa, sendo border-width para largura, border-style para estilo e border-color para cor.
+
+        Dá pra utilizar essas propriedades especificas também para uma borda especificas conforme abaixo:    
+        
+    
+    border-bottom-width: 5px; largura da borda inferior
+    border-bottom-style: double; estilo da borda inferior
+    border-bottom-color: purple; cor da borda inferior
+    */
+
+
+    margin-bottom: 15px;
+
+    /* OBS.: "margin" também pode ter declarações de valores de forma semelhante ao padding,
+             conforme abaixo 15px é a margin do topo, 10px é a da direita, 5px do canto inferior
+             e 0 da esquerda
+             
+             margin: 15px 10px 5px 0;*/
+
+
+    border-radius: 5px; /*"border-radius serve para definirmos o arredondamento das bordas do conteúdo,
+                        além do valor em pixels(px) também pode receber valor em porcentagem(%)
+                        
+                        OBS.: pode receber valores da mesma forma que as definições feitas acimas nas
+                            propriedades padding e margin.*/ 
+                        
+    
+
+    
+    
+    
+  
+}
+
+.post_content {
+    margin: 0px;
+    margin-bottom: 15px;
+
+    /*font-weight: bold;*/ /*a tag "font-weight" é utilizada para definição do peso de um texto.
+                             Pode receber valores númericos e valores em texto (como normal que não altera
+                             o peso ou bold, que deixa o texto em negrito).
+                            */ 
+    text-transform: capitalize;
+
+    text-align: center; /*A tag "text-align" define o alinhamento do texto. Pode receber o valor left 
+                          que alinha o texto a esquerda, right que alinha a direita, center que alinha
+                          ao centro e também justify que ajusta o texto para que seu conteúdo em cada linha
+                          ocupe todo o espaço disponível da linha.*/
+
+    
+}
+
+.post_image {
+    margin-bottom: 15px;
+    width: 100%; /*o valor "100%" passado a propriedade "width" indica que 
+                  o elemento HTML que estiver usando está classe ira ocupar toda
+                  a largura disponivel no elemento fora dela, não ocupando mais que isso.*/
+}
+
+
+/*
+Anotações sobre como utilizar "list-style-type" e "list-style-image" em um elemento ul usando o seletor de tipo
+do mesmo:
+
+ul {
+    list-style-type: square;  Define o tipo do marcador utilizado em uma lista. Existem várias opções
+                                para listas ordenadas e não ordenadas e no caso acima o marcador padrão 
+                                da lista não ordenada se torna um quadrado ao ínves de um círculo. 
+                                
+                                listas não ordenadas também podem ter seu marcador alterado para um emoji,
+                                para isso é só passar a propriedade "list-style-type" o valor referente ao código do emoji, 
+                                por exemplo \1F44D que ira alterar o marcador para um joia.
+
+    list-style-image: url("minha-img.jpg");  Define o marcador da lista para uma imagem
+}*/
+
+
+/*
+Anotações sobre como utilizar "list-style-type" em um elemento ol usando o seletor de tipo do mesmo:
+
+
+ol {
+
+    /*list-style-type: lower-roman;} */  /*Já neste caso ao lado o marcador númerico padrão de uma lista 
+                                    ordenada foi alterado para algarismos romanos em mínusculo devido ao valor
+                                    "lower-roman".*/
+
+
+                    
+.contacts_list {  /*Classe utilizada no código do index.html para estilizar uma lista ul.*/
+    list-style-type: none; /*com o valor none os marcadores são removidos da lista*/
+    padding-left: 15px;
+
+}
+
+.contacts_list li a {  /*  Classe criada com finalidade de estilizar todos os elementos que forem tag A e que estiverem
+                           dentro de uma tag li e que a mesma esteja dentro de um elemento que use a classe
+                           ".contacts_list".
+                            */
+   text-decoration: none;
+}
+
+
+
+                                
+                    
